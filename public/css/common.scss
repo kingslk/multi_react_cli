@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    vertical-align: middle;
+    border: none;
+}
+i {
+    display: inline-block;
+    background-color: transparent;
+}
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: #5d5d5d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+button {
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+input,
+textarea {
+    border: none;
+    outline: none;
+}
+body {
+    font-family: 'Microsoft YaHei';
+    height: 100%;
+}

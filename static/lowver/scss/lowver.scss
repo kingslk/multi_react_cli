@@ -1,0 +1,5 @@
+@import 'sprite-pclowver.scss';
+.test {
+    @extend %sprite;
+    @include douwa;
+}

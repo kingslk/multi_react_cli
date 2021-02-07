@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "allowSyntheticDefaultImports": true,
+        // 没有这句话模块是没有提示的
+        "module": "commonjs",
+        "baseUrl": "./",
+        "paths": {
+            "@components/*": ["src/components/*"],
+            "@assets/*": ["public/assets/*"],
+            "@utils/*": ["src/utils/*"],
+            "@css/*": ["public/css/*"],
+            "@hooks/*": ["src/hooks/*"],
+            "@config/*": ["public/config/*"],
+            "@api/*": ["src/api/*"],
+            "@/*": ["src/*"]
+        }
+    },
+    // 忽略打包文件夹
+    "exclude": ["node_modules", "dist"],
+    "include": ["src", "public"]
+}

@@ -1,0 +1,11 @@
+node_modules
+# 忽略打包文件夹
+dist
+build
+jsconfig.json
+libs
+*.config.js
+webpack.*.js
+gulpfile.js
+static
+flexible.js

@@ -1,0 +1,21 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "esmodules": true,
+                    "ie": "8"
+                },
+                "loose": true,
+                "useBuiltIns": "usage",
+                // 输出兼容日志
+                // "debug": true,
+                // 2稳定
+                "corejs": 2
+            }
+        ],
+        "@babel/preset-react"
+    ],
+    "plugins": [["@babel/plugin-transform-runtime"], "@babel/plugin-proposal-class-properties"]
+}

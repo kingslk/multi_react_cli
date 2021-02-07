@@ -1,0 +1,58 @@
+@mixin clearfix {
+    *zoom: 1;
+    &:after {
+        content: '';
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+@mixin bfc {
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+    }
+}
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: bottom;
+    *vertical-align: auto;
+}
+@mixin inputColor($color) {
+    color: $color;
+    &::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: $color;
+    }
+    &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: $color;
+    }
+    &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: $color;
+    }
+    &::-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: $color;
+    }
+}
+@mixin flex($dir, $align, $just) {
+    display: flex;
+    // display: box;
+    flex-direction: $dir;
+    align-items: $align;
+    justify-content: $just;
+}
+@mixin abs() {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
