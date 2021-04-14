@@ -66,8 +66,8 @@ module.exports = merge(common, {
     },
     plugins: [
         ...output.deletePlugin(),
-        new CopyPlugin({
-            patterns: [...copyPlugins.copyEmoji(), ...copyPlugins.copyView()]
-        })
+        // new CopyPlugin({
+        //     patterns: [...copyPlugins.copyEmoji(), ...copyPlugins.copyView()]
+        // })
     ]
 });
